@@ -11,7 +11,7 @@ body {
 
 .page-grid {
     display: grid;
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 260px 1fr;
     grid-template-areas:
         "header  header"
         "sidebar content"
@@ -67,6 +67,14 @@ body {
 .sidebar ul {
     list-style: none;
     padding-left: 0;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    margin-bottom: 10px;
 }
 
 .sidebar a {
