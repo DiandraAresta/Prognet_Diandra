@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-grid">
+
+        <!-- ================= HEADER ================= -->
+        <header class="header">
+            <img class="foto-profil" src="foto_profil.png" alt="Foto Profil" width="150" height="150">
+            <h1>Biodata Saya</h1>
+            <h2>I Gusti Putu Ngurah Diandra Aresta Pramana Putra</h2>
+            <h3>Mahasiswa Teknologi Informasi &mdash; Badung, Bali</h3>
+
+            <nav class="navbar">
+                <a href="#about">About Me</a>
+                <a href="#skills-hobbies">Skills &amp; Hobbies</a>
+                <a href="#pendidikan-pengalaman">Pendidikan &amp; Pengalaman</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+        </header>
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar" id="skills-hobbies">
+            <h3>Skill</h3>
+            <ul>
+                <li>Basic Python</li>
+                <li>Basic C / C++</li>
+                <li>Basic SQL &amp; Database</li>
+                <li>Basic Data Analysis</li>
+                <li>Basic Computer Networking</li>
+            </ul>
+
+            <h3>Hobi</h3>
+            <ul>
+                <li>Gaming</li>
+                <li>Exploring Technology</li>
+                <li>Watching Movies</li>
+            </ul>
+
+            <h3>Sosial Media</h3>
+            <ul class="social-list">
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="18" height="18">
+                    <a href="https://github.com/DiandraAresta" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="18" height="18">
+                    <a href="https://www.linkedin.com/in/diandra-aresta-462432318/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="18" height="18">
+                    <a href="mailto:diandraaresta@gmail.com">diandraaresta66@gmail.com</a>
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/128/9946/9946316.png" alt="Telephone" width="18" height="18">
+                    <a href="tel:085710803848">+6285710803848</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- ================= CONTENT (pakai Flexbox) ================= -->
+        <main class="content">
+
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Saya merupakan mahasiswa Teknologi Informasi yang memiliki ketertarikan pada pengembangan aplikasi,
+                    pengolahan data, dan cyber security. Saya senang mempelajari hal baru melalui berbagai proyek dan
+                    kompetisi untuk mengembangkan kemampuan teknis serta pengalaman dalam bekerja secara individu
+                    maupun tim.</p>
+            </section>
+
+            <section id="pendidikan-pengalaman">
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <h2>Riwayat Pendidikan</h2>
+                        <ul>
+                            <li>
+                                <b>Universitas Udayana</b> (2025-Sekarang)
+                                <br><i>S1 Teknologi Informasi</i>
+                                <p>Fokus mempelajari pengembangan aplikasi, analisis data, algoritma, serta
+                                    dasar-dasar jaringan.</p>
+                            </li>
+                            <li>
+                                <b>SMAN 8 Denpasar</b> (2023-2025)
+                                <br><i>MIPA</i>
+                                <p>Mempelajari dasar-dasar ilmu sains, matematika, serta membangun pemikiran logis
+                                    dan ketertarikan pada dunia teknologi.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-col">
+                        <h2>Pengalaman</h2>
+                        <b>Peserta Kompetisi Data Mining Gemastik 2026</b>
+                        <p>Membuat framework untuk analisis data spasial yang diintegrasikan dengan data demografi
+                            masyarakat disabilitas di suatu daerah untuk menentukan tingkat aksesibilitas
+                            infrastruktur pejalan kaki.</p>
+
+                        <b>Peserta Kompetisi Data Analyst FIND IT</b>
+                        <p>Membuat sebuah model untuk deteksi wajah dengan keakuratan paling tinggi yang dibagi
+                            menjadi 5 klasifikasi yang berbeda.</p>
+
+                        <b>Peserta Kompetisi CTF C2C</b>
+                        <p>Mencari flag dalam konteks kompetisi CTF (Capture The Flag) dengan kategori yang
+                            berbeda-beda.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="kontak">
+                <h2>Kontak</h2>
+                <form action="#" method="post">
+                    <p>
+                        <label for="nama">Nama:</label><br>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                    </p>
+                    <p>
+                        <label for="subjek">Subjek:</label><br>
+                        <input type="text" id="subjek" name="subjek" placeholder="Subjek pesan" required>
+                    </p>
+                    <p>
+                        <label for="pesan">Pesan:</label><br>
+                        <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Kirim Pesan</button>
+                    </p>
+                </form>
+            </section>
+
+        </main>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="footer">
+            <p>&copy; 2026 I Gusti Putu Ngurah Diandra Aresta Pramana Putra</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
